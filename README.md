@@ -44,6 +44,7 @@ This package is a ROS 2 package designed for controlling a robot in Gazebo using
    │   └── <.yaml>        # Configuration files for controllers
    └── README.md                       # This file
    ```
+![Step1](https://github.com/user-attachments/assets/e56e3d67-b0ec-4568-9be4-4bc923bdad51)
 
 ![Gazebo](Step1.gif)
 ## Gazebo Simulation
@@ -51,6 +52,7 @@ This package is a ROS 2 package designed for controlling a robot in Gazebo using
    ```bash
    ros2 launch ecvt_controller e_ecvt_gazebo_v2.launch.py
    ```
+![Gazebo_under_effort](https://github.com/user-attachments/assets/a1673d08-d046-4c63-890f-cdc77219098d)
 
 ![Gazebo](Gazebo_under_effort.gif)
 ## Gazebo Controller
