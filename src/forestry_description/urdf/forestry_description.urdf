@@ -1,0 +1,3225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="forestry_description">
+
+  <link name="world" />
+  
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.54031917901198 0.00109713101080256 0.33647383677463"
+        rpy="0 0 0" />
+      <mass
+        value="4741.94930567749" />
+      <inertia
+        ixx="2748.1155050838"
+        ixy="-2.93102873529126"
+        ixz="4.3176272224981"
+        iyy="2245.24102293317"
+        iyz="-12.8937323800502"
+        izz="4571.24460469902" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint name="world_to_base" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
+
+
+
+  <link
+    name="FR1">
+    <inertial>
+      <origin
+        xyz="0.128459885744936 0.00404827021732312 0.0225620718217145"
+        rpy="0 0 0" />
+      <mass
+        value="184.045000703748" />
+      <inertia
+        ixx="6.76503431022354"
+        ixy="-0.0457434022888719"
+        ixz="-0.514591277300397"
+        iyy="7.97145218183556"
+        iyz="-0.0383922185966743"
+        izz="7.5357686897527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ1"
+    type="revolute">
+    <origin
+      xyz="0.94 -0.9125 0.2"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.785398"
+      upper="0.5235987"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR2">
+    <inertial>
+      <origin
+        xyz="0.588774137911626 0.040851108568861 0.020284900090472"
+        rpy="0 0 0" />
+      <mass
+        value="36.5845458368152" />
+      <inertia
+        ixx="1.0087105677874"
+        ixy="-0.0947398441532115"
+        ixz="0.263965807523486"
+        iyy="7.61553593486858"
+        iyz="-0.0240436699181846"
+        izz="7.61601085721198" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ2"
+    type="revolute">
+    <origin
+      xyz="0.3 0.01 -0.11"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FR1" />
+    <child
+      link="FR2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR3">
+    <inertial>
+      <origin
+        xyz="0.00356383701771801 -0.427150481599804 0.00435955283819156"
+        rpy="0 0 0" />
+      <mass
+        value="22.9329517084687" />
+      <inertia
+        ixx="2.1622683407372"
+        ixy="-0.0522323144372039"
+        ixz="1.8153638825174E-18"
+        iyy="0.164045827211877"
+        iyz="-7.52108575078556E-17"
+        izz="2.13893902934875" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ3"
+    type="revolute">
+    <origin
+      xyz="1.4 0 0.0125"
+      rpy="0 0 0" />
+    <parent
+      link="FR2" />
+    <child
+      link="FR3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR4_1">
+    <inertial>
+      <origin
+        xyz="2.97539770599542E-14 -1.38333788868295E-13 0.00616336110124471"
+        rpy="0 0 0" />
+      <mass
+        value="16.5024333560923" />
+      <inertia
+        ixx="0.244638564571836"
+        ixy="-4.7757941027684E-18"
+        ixz="9.54943185721751E-18"
+        iyy="0.244638564571836"
+        iyz="-1.90772089049017E-17"
+        izz="0.0139877069681215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ4_1"
+    type="revolute">
+    <origin
+      xyz="0 -1 0"
+      rpy="0 0 0" />
+    <parent
+      link="FR3" />
+    <child
+      link="FR4_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FR4_2">
+    <inertial>
+      <origin
+        xyz="0.0359094474413499 -0.125594428076551 -0.00249995255871127"
+        rpy="0 0 0" />
+      <mass
+        value="69.3567504787419" />
+      <inertia
+        ixx="1.77952065402798"
+        ixy="-0.0294501237349712"
+        ixz="-7.53377464852006E-08"
+        iyy="2.57650385607334"
+        iyz="1.50333647026858E-07"
+        izz="1.23222409349747" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ4_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FR4_1" />
+    <child
+      link="FR4_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FR4">
+    <inertial>
+      <origin
+        xyz="-2.72262448142158E-08 -0.149455972163337 -0.242790467699869"
+        rpy="0 0 0" />
+      <mass
+        value="146.80212814284" />
+      <inertia
+        ixx="7.25648455747012"
+        ixy="1.19950491152712E-05"
+        ixz="1.42933724785291E-05"
+        iyy="6.20788937348665"
+        iyz="-0.917764733776497"
+        izz="8.18964062902722" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ4"
+    type="revolute">
+    <origin
+      xyz="0 -0.181 -0.0025"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="FR4_2" />
+    <child
+      link="FR4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR5">
+    <inertial>
+      <origin
+        xyz="-1.14180807919695E-07 3.80386971832181E-06 0.557212941852296"
+        rpy="0 0 0" />
+      <mass
+        value="143.339707130021" />
+      <inertia
+        ixx="17.4881909307814"
+        ixy="-0.000100415976312996"
+        ixz="1.3420319366117E-05"
+        iyy="17.4894239618211"
+        iyz="-0.000184817041845037"
+        izz="30.9106672715801" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FR5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRJ5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.251"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FR4" />
+    <child
+      link="FR5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="FRB0">
+    <inertial>
+      <origin
+        xyz="0.0806347311700861 0.0873713905316755 -0.00249999999997974"
+        rpy="0 0 0" />
+      <mass
+        value="21.7247820620153" />
+      <inertia
+        ixx="0.192847221143694"
+        ixy="-0.000680393657359608"
+        ixz="-3.47620138937201E-19"
+        iyy="0.10723046509661"
+        iyz="1.11944016006594E-19"
+        izz="0.29862936743617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRBJ0"
+    type="revolute">
+    <origin
+      xyz="1.4 0 0.0125"
+      rpy="0 0 0" />
+    <parent
+      link="FR2" />
+    <child
+      link="FRB0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FRB2">
+    <inertial>
+      <origin
+        xyz="4.44089209850063E-16 -3.6422254101609E-13 5.55111512312578E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.79252951740625" />
+      <inertia
+        ixx="0.000729444653066361"
+        ixy="-1.33668140794758E-19"
+        ixz="8.76295100371585E-21"
+        iyy="0.000729444653066361"
+        iyz="-2.06022518794996E-20"
+        izz="0.00112765869619503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRBJ2"
+    type="revolute">
+    <origin
+      xyz="0.18 0 -0.0025"
+      rpy="0 0 0" />
+    <parent
+      link="FRB0" />
+    <child
+      link="FRB2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FRB3">
+    <inertial>
+      <origin
+        xyz="1.73194791841524E-14 -0.53259095871835 -3.33066907387547E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.50323706641284" />
+      <inertia
+        ixx="0.330577290856634"
+        ixy="-1.82088051843406E-15"
+        ixz="-1.52116760345258E-18"
+        iyy="0.00622995155935606"
+        iyz="-1.2904466190452E-17"
+        izz="0.336710465944546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRBJ3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FRB2" />
+    <child
+      link="FRB3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FRB1">
+    <inertial>
+      <origin
+        xyz="0.700000000000021 5.05151476204446E-15 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.64822195764989" />
+      <inertia
+        ixx="0.0034495743277176"
+        ixy="5.6941162703032E-16"
+        ixz="1.31452628535707E-16"
+        iyy="0.564269911870246"
+        iyz="-1.85412861086715E-18"
+        izz="0.567581904124662" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FRB1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRBJ1"
+    type="revolute">
+    <origin
+      xyz="0.38 0 0.14"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FR1" />
+    <child
+      link="FRB1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FRJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="FL1">
+    <inertial>
+      <origin
+        xyz="0.128459885744939 -0.00404827021732412 0.0150620718217146"
+        rpy="0 0 0" />
+      <mass
+        value="184.045000703748" />
+      <inertia
+        ixx="6.76503431022354"
+        ixy="0.0457434022888719"
+        ixz="-0.514591277300399"
+        iyy="7.97145218183556"
+        iyz="0.0383922185966734"
+        izz="7.5357686897527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ1"
+    type="revolute">
+    <origin
+      xyz="0.94 0.9125 0.2075"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.5235987"
+      upper="0.785398"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL2">
+    <inertial>
+      <origin
+        xyz="0.588774149329061 0.0408511028098 -0.0127848930546968"
+        rpy="0 0 0" />
+      <mass
+        value="36.5845433565166" />
+      <inertia
+        ixx="1.00871051362826"
+        ixy="-0.0947398884847922"
+        ixz="-0.26396576144749"
+        iyy="7.61553574144829"
+        iyz="0.0240436496542899"
+        izz="7.61601067928965" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ2"
+    type="revolute">
+    <origin
+      xyz="0.3 -0.0025 -0.1175"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FL1" />
+    <child
+      link="FL2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL3">
+    <inertial>
+      <origin
+        xyz="0.00356383701772067 -0.427150481599805 -0.00935955283815515"
+        rpy="0 0 0" />
+      <mass
+        value="22.9329517084687" />
+      <inertia
+        ixx="2.1622683407372"
+        ixy="-0.0522323144372039"
+        ixz="-4.35739593980413E-19"
+        iyy="0.164045827211877"
+        iyz="7.80775218895981E-17"
+        izz="2.13893902934875" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ3"
+    type="revolute">
+    <origin
+      xyz="1.4 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FL2" />
+    <child
+      link="FL3" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL4_1">
+    <inertial>
+      <origin
+        xyz="2.93098878501041E-14 -1.41997524849558E-13 -0.0111633611012258"
+        rpy="0 0 0" />
+      <mass
+        value="16.5024333560923" />
+      <inertia
+        ixx="0.244638564571836"
+        ixy="-7.97905036313519E-20"
+        ixz="-3.57261530538246E-18"
+        iyy="0.244638564571836"
+        iyz="1.25282877441871E-17"
+        izz="0.0139877069681215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ4_1"
+    type="revolute">
+    <origin
+      xyz="0 -1 0"
+      rpy="0 0 0" />
+    <parent
+      link="FL3" />
+    <child
+      link="FL4_1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FL4_2">
+    <inertial>
+      <origin
+        xyz="0.0359091607517366 -0.125594578063898 -0.00249986817515291"
+        rpy="0 0 0" />
+      <mass
+        value="69.3567064226713" />
+      <inertia
+        ixx="1.77951824920781"
+        ixy="-0.0294501684033453"
+        ixz="5.97820825268491E-08"
+        iyy="2.57650177263851"
+        iyz="-2.72198544186524E-07"
+        izz="1.23222433067319" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ4_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FL4_1" />
+    <child
+      link="FL4_2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FL4">
+    <inertial>
+      <origin
+        xyz="3.0246844584525E-08 0.149453496690673 -0.237790418569519"
+        rpy="0 0 0" />
+      <mass
+        value="146.801539980925" />
+      <inertia
+        ixx="7.25645441050801"
+        ixy="1.5578992692465E-05"
+        ixz="-1.39670059391026E-05"
+        iyy="6.20786909809727"
+        iyz="0.917759855227298"
+        izz="8.18959988104353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ4"
+    type="revolute">
+    <origin
+      xyz="0 -0.186 -0.0025"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="FL4_2" />
+    <child
+      link="FL4" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL5">
+    <inertial>
+      <origin
+        xyz="3.15821191421151E-07 1.26238595561379E-05 -0.55781735910767"
+        rpy="0 0 0" />
+      <mass
+        value="436.42578487557" />
+      <inertia
+        ixx="58.736371608715"
+        ixy="-0.000816013262608184"
+        ixz="-7.03552793333617E-05"
+        iyy="58.7375440299027"
+        iyz="-0.0020094130681266"
+        izz="104.577777742225" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FL5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLJ5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.246"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FL4" />
+    <child
+      link="FL5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="FLB0">
+    <inertial>
+      <origin
+        xyz="0.0806347311700861 0.0873713905320268 -0.00249999999998163"
+        rpy="0 0 0" />
+      <mass
+        value="21.7247820620153" />
+      <inertia
+        ixx="0.192847221143694"
+        ixy="-0.000680393657359613"
+        ixz="1.39275582245481E-18"
+        iyy="0.10723046509661"
+        iyz="-3.48543813802891E-19"
+        izz="0.29862936743617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLBJ0"
+    type="revolute">
+    <origin
+      xyz="1.4 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FL2" />
+    <child
+      link="FLB0" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FLB2">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-15 -1.80411241501588E-16 3.33066907387547E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.79252951740625" />
+      <inertia
+        ixx="0.000729444653066361"
+        ixy="-2.24010976137132E-20"
+        ixz="-3.07136726208485E-20"
+        iyy="0.000729444653066361"
+        iyz="1.41666365653347E-20"
+        izz="0.00112765869619503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLBJ2"
+    type="revolute">
+    <origin
+      xyz="0.18 0 -0.0025"
+      rpy="0 0 0" />
+    <parent
+      link="FLB0" />
+    <child
+      link="FLB2" />
+    <axis
+      xyz="0 0 -1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FLB3">
+    <inertial>
+      <origin
+        xyz="5.77315972805081E-15 -0.532590958718287 3.33066907387547E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.50323706641283" />
+      <inertia
+        ixx="0.330577290856633"
+        ixy="-1.79987057360272E-15"
+        ixz="8.43009342773682E-19"
+        iyy="0.00622995155935608"
+        iyz="-7.74513383681749E-18"
+        izz="0.336710465944545" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLBJ3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FLB2" />
+    <child
+      link="FLB3" />
+    <axis
+      xyz="0 0 -1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="FLB1">
+    <inertial>
+      <origin
+        xyz="0.700000000000001 4.9960036108132E-16 7.7715611723761E-16"
+        rpy="0 0 0" />
+      <mass
+        value="3.64822195764989" />
+      <inertia
+        ixx="0.00344957432771761"
+        ixy="5.48950953835021E-16"
+        ixz="1.3276491411171E-16"
+        iyy="0.564269911870246"
+        iyz="-4.12063437069308E-19"
+        izz="0.567581904124661" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/FLB1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FLBJ1"
+    type="revolute">
+    <origin
+      xyz="0.38 0 0.1325"
+      rpy="1.5708 0 0" />
+    <parent
+      link="FL1" />
+    <child
+      link="FLB1" />
+    <axis
+      xyz="0 0 -1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="FLJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="RR1">
+    <inertial>
+      <origin
+        xyz="-0.128459885744939 0.00404827021732379 0.0225620718217157"
+        rpy="0 0 0" />
+      <mass
+        value="184.045000703749" />
+      <inertia
+        ixx="6.76503431022354"
+        ixy="0.0457434022888696"
+        ixz="0.514591277300399"
+        iyy="7.97145218183557"
+        iyz="-0.0383922185966735"
+        izz="7.5357686897527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ1"
+    type="revolute">
+    <origin
+      xyz="-1.51 -0.9125 0.2"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.5235987"
+      upper="0.785398"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR2">
+    <inertial>
+      <origin
+        xyz="-0.588774149329061 0.0408511028098014 0.0127848930546967"
+        rpy="0 0 0" />
+      <mass
+        value="36.5845433565165" />
+      <inertia
+        ixx="1.00871051362826"
+        ixy="0.0947398884847944"
+        ixz="-0.263965761447491"
+        iyy="7.61553574144828"
+        iyz="-0.0240436496542896"
+        izz="7.61601067928964" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ2"
+    type="revolute">
+    <origin
+      xyz="-0.3 0.0025 -0.11"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RR1" />
+    <child
+      link="RR2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR3">
+    <inertial>
+      <origin
+        xyz="-0.00356383701772245 -0.427150481599803 0.00935955283815515"
+        rpy="0 0 0" />
+      <mass
+        value="22.9329517084689" />
+      <inertia
+        ixx="2.16226834073721"
+        ixy="0.0522323144372041"
+        ixz="-7.51602542573697E-19"
+        iyy="0.164045827211879"
+        iyz="-7.68937945734984E-17"
+        izz="2.13893902934876" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ3"
+    type="revolute">
+    <origin
+      xyz="-1.4 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RR2" />
+    <child
+      link="RR3" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR4_1">
+    <inertial>
+      <origin
+        xyz="-3.10862446895044E-14 -1.38666855775682E-13 0.0111633611012182"
+        rpy="0 0 0" />
+      <mass
+        value="16.5024333560923" />
+      <inertia
+        ixx="0.244638564571836"
+        ixy="7.9790503631352E-20"
+        ixz="-3.57261530538246E-18"
+        iyy="0.244638564571836"
+        iyz="-1.25282877441871E-17"
+        izz="0.0139877069681215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ4_1"
+    type="revolute">
+    <origin
+      xyz="0 -1 0"
+      rpy="0 0 0" />
+    <parent
+      link="RR3" />
+    <child
+      link="RR4_1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="RR4_2">
+    <inertial>
+      <origin
+        xyz="-0.0359091607517379 -0.125594578063893 0.00249986817514558"
+        rpy="0 0 0" />
+      <mass
+        value="69.3567064226714" />
+      <inertia
+        ixx="1.77951824920781"
+        ixy="0.0294501684033658"
+        ixz="5.9782083421565E-08"
+        iyy="2.57650177263851"
+        iyz="2.72198544681528E-07"
+        izz="1.23222433067319" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ4_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RR4_1" />
+    <child
+      link="RR4_2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="RR4">
+    <inertial>
+      <origin
+        xyz="-3.02467926260874E-08 -0.149453496690663 -0.230290418569618"
+        rpy="0 0 0" />
+      <mass
+        value="146.801539980925" />
+      <inertia
+        ixx="7.25645441050801"
+        ixy="1.55789924592611E-05"
+        ixz="1.39670062205981E-05"
+        iyy="6.20786909809725"
+        iyz="-0.917759855227309"
+        izz="8.18959988104351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ4"
+    type="revolute">
+    <origin
+      xyz="0 -0.1935 0.0025"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="RR4_2" />
+    <child
+      link="RR4" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR5">
+    <inertial>
+      <origin
+        xyz="-3.15934655770178E-07 1.26237352975345E-05 0.55781735910992"
+        rpy="0 0 0" />
+      <mass
+        value="436.425785007827" />
+      <inertia
+        ixx="58.7363716356569"
+        ixy="0.000816001465151365"
+        ixz="-7.03563477497343E-05"
+        iyy="58.7375440356666"
+        iyz="0.00200941296449644"
+        izz="104.577777775049" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RR5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRJ5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.2385"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RR4" />
+    <child
+      link="RR5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RRB0">
+    <inertial>
+      <origin
+        xyz="-0.0806347311700222 0.087371390531422 0.00249999999998152"
+        rpy="0 0 0" />
+      <mass
+        value="21.7247820620153" />
+      <inertia
+        ixx="0.192847221143694"
+        ixy="0.000680393657359611"
+        ixz="1.39329185348751E-18"
+        iyy="0.10723046509661"
+        iyz="3.5527784867202E-19"
+        izz="0.29862936743617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRBJ0"
+    type="revolute">
+    <origin
+      xyz="-1.4 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RR2" />
+    <child
+      link="RRB0" />
+    <axis
+      xyz="0 0 -1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RRB2">
+    <inertial>
+      <origin
+        xyz="-1.11466391672366E-13 5.48727729920984E-14 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.79252951740625" />
+      <inertia
+        ixx="0.00072944465306636"
+        ixy="2.24010976137132E-20"
+        ixz="-3.07136726208485E-20"
+        iyy="0.000729444653066361"
+        iyz="-1.41666365653347E-20"
+        izz="0.00112765869619503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRBJ2"
+    type="revolute">
+    <origin
+      xyz="-0.18 0 0.0025"
+      rpy="0 0 0" />
+    <parent
+      link="RRB0" />
+    <child
+      link="RRB2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RRB3">
+    <inertial>
+      <origin
+        xyz="-6.79456491070596E-14 -0.532590958718266 -1.11022302462516E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.50323706641282" />
+      <inertia
+        ixx="0.330577290856632"
+        ixy="-3.16587034365769E-17"
+        ixz="1.45238383624763E-18"
+        iyy="0.00622995155935604"
+        iyz="-5.71015869749447E-18"
+        izz="0.336710465944543" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRBJ3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RRB2" />
+    <child
+      link="RRB3" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ3"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RRB1">
+    <inertial>
+      <origin
+        xyz="-0.700000000000003 -2.77555756156289E-16 -2.66453525910038E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3.64822195764986" />
+      <inertia
+        ixx="0.00344957432771757"
+        ixy="1.05111486949167E-19"
+        ixz="1.56278256772788E-19"
+        iyy="0.56426991187024"
+        iyz="-8.09044468424736E-21"
+        izz="0.567581904124655" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RRB1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRBJ1"
+    type="revolute">
+    <origin
+      xyz="-0.38 0 0.14"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RR1" />
+    <child
+      link="RRB1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RRJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RL1">
+    <inertial>
+      <origin
+        xyz="-0.12845988574494 -0.0040482702173239 0.0225620718217156"
+        rpy="0 0 0" />
+      <mass
+        value="184.045000703749" />
+      <inertia
+        ixx="6.76503431022355"
+        ixy="-0.0457434022888701"
+        ixz="0.5145912773004"
+        iyy="7.97145218183556"
+        iyz="0.0383922185966739"
+        izz="7.5357686897527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ1"
+    type="revolute">
+    <origin
+      xyz="-1.51 0.9125 0.2"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL1" />
+    <axis
+      xyz="0 0 1" />  
+    <limit
+      lower="-0.785398"
+      upper="0.5235987"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL2">
+    <inertial>
+      <origin
+        xyz="-0.588774137911628 0.0408511085688625 -0.00878490009047117"
+        rpy="0 0 0" />
+      <mass
+        value="36.5845458368152" />
+      <inertia
+        ixx="1.0087105677874"
+        ixy="0.0947398441532105"
+        ixz="0.263965807523487"
+        iyy="7.61553593486857"
+        iyz="0.0240436699181853"
+        izz="7.61601085721197" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ2"
+    type="revolute">
+    <origin
+      xyz="-0.3 0.0015 -0.11"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RL1" />
+    <child
+      link="RL2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL3">
+    <inertial>
+      <origin
+        xyz="-0.00356383701772245 -0.427150481599803 -0.0168595528381908"
+        rpy="0 0 0" />
+      <mass
+        value="22.9329517084689" />
+      <inertia
+        ixx="2.16226834073721"
+        ixy="0.0522323144372041"
+        ixz="1.27484774867109E-18"
+        iyy="0.164045827211879"
+        iyz="7.64652536413925E-17"
+        izz="2.13893902934876" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ3"
+    type="revolute">
+    <origin
+      xyz="-1.4 0 0.0115"
+      rpy="0 0 0" />
+    <parent
+      link="RL2" />
+    <child
+      link="RL3" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-0.9599308"
+      upper="0.9599308"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL4_1">
+    <inertial>
+      <origin
+        xyz="-3.10862446895044E-14 -1.38888900380607E-13 -0.0186633611012671"
+        rpy="0 0 0" />
+      <mass
+        value="16.5024333560923" />
+      <inertia
+        ixx="0.244638564571836"
+        ixy="5.25453712455653E-18"
+        ixz="1.09936871250377E-17"
+        iyy="0.244638564571836"
+        iyz="2.38948860595821E-17"
+        izz="0.0139877069681215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ4_1"
+    type="revolute">
+    <origin
+      xyz="0 -1 0"
+      rpy="0 0 0" />
+    <parent
+      link="RL3" />
+    <child
+      link="RL4_1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="RL4_2">
+    <inertial>
+      <origin
+        xyz="-0.0359094476098796 -0.125594428058867 -0.0100000475769014"
+        rpy="0 0 0" />
+      <mass
+        value="69.3567505547063" />
+      <inertia
+        ixx="1.77952065529542"
+        ixy="0.0294501237029603"
+        ixz="-7.67285133522601E-08"
+        iyy="2.57650385886908"
+        iyz="-1.5035821884041E-07"
+        izz="1.23222409507826" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ4_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RL4_1" />
+    <child
+      link="RL4_2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="RL4">
+    <inertial>
+      <origin
+        xyz="2.722708547509E-08 0.149455972163335 -0.222790467699517"
+        rpy="0 0 0" />
+      <mass
+        value="146.802128142842" />
+      <inertia
+        ixx="7.2564845574702"
+        ixy="1.19950434607309E-05"
+        ixz="-1.42933783501239E-05"
+        iyy="6.20788937348672"
+        iyz="0.917764733776505"
+        izz="8.18964062902728" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ4"
+    type="revolute">
+    <origin
+      xyz="0 -0.201 -0.01"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="RL4_2" />
+    <child
+      link="RL4" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL5">
+    <inertial>
+      <origin
+        xyz="1.27626266444025E-07 4.24790160313826E-06 -0.557817319013973"
+        rpy="0 0 0" />
+      <mass
+        value="436.427864998985" />
+      <inertia
+        ixx="58.7367826434384"
+        ixy="0.000341396061247056"
+        ixz="4.56285275999694E-05"
+        iyy="58.7374588934677"
+        iyz="0.000628375299781489"
+        izz="104.578444128481" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RL5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLJ5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.231"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RL4" />
+    <child
+      link="RL5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RLB0">
+    <inertial>
+      <origin
+        xyz="-0.0806347311700857 0.0873713905320295 -0.010000000000017"
+        rpy="0 0 0" />
+      <mass
+        value="21.7247820620153" />
+      <inertia
+        ixx="0.192847221143694"
+        ixy="0.000680393657359611"
+        ixz="-3.49124079600806E-19"
+        iyy="0.10723046509661"
+        iyz="-1.44031369638629E-19"
+        izz="0.29862936743617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLBJ0"
+    type="revolute">
+    <origin
+      xyz="-1.4 0 0.0115"
+      rpy="0 0 0" />
+    <parent
+      link="RL2" />
+    <child
+      link="RLB0" />
+    <axis
+      xyz="0 0 -1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RLB2">
+    <inertial>
+      <origin
+        xyz="-3.99680288865056E-15 2.15105711021124E-15 -0.00878957266543112"
+        rpy="0 0 0" />
+      <mass
+        value="1.79252951740625" />
+      <inertia
+        ixx="0.00072944465306636"
+        ixy="1.32696300079413E-19"
+        ixz="1.45463286235568E-20"
+        iyy="0.00072944465306636"
+        iyz="1.16138449218761E-20"
+        izz="0.00112765869619503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLBJ2"
+    type="revolute">
+    <origin
+      xyz="-0.18 0 -0.0012104"
+      rpy="0 0 0" />
+    <parent
+      link="RLB0" />
+    <child
+      link="RLB2" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RLB3">
+    <inertial>
+      <origin
+        xyz="-1.28785870856518E-14 -0.532590958718293 -0.00878957266543046"
+        rpy="0 0 0" />
+      <mass
+        value="3.50323706641283" />
+      <inertia
+        ixx="0.330577290856633"
+        ixy="-3.27429056090624E-17"
+        ixz="-1.45238383624762E-18"
+        iyy="0.00622995155935606"
+        iyz="-1.16059395641601E-17"
+        izz="0.336710465944545" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLBJ3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RLB2" />
+    <child
+      link="RLB3" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ3"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="RLB1">
+    <inertial>
+      <origin
+        xyz="-0.700000000000003 1.27675647831893E-15 0.00100000000000289"
+        rpy="0 0 0" />
+      <mass
+        value="3.64822195764986" />
+      <inertia
+        ixx="0.00344957432771757"
+        ixy="-3.48417254124996E-19"
+        ixz="-5.63402337306813E-20"
+        iyy="0.56426991187024"
+        iyz="5.63087562739449E-21"
+        izz="0.567581904124655" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/RLB1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLBJ1"
+    type="revolute">
+    <origin
+      xyz="-0.38 0.001 0.14"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RL1" />
+    <child
+      link="RLB1" />
+    <axis
+      xyz="0 0 1" /> 
+    <limit
+      lower="-3.141592"
+      upper="3.141592"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="RLJ2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  
+  <link
+    name="base_Link_boom">
+    <inertial>
+      <origin
+        xyz="3.7436 0.0045415 0.58232"
+        rpy="0 0 0" />
+      <mass
+        value="582.98" />
+      <inertia
+        ixx="68.479"
+        ixy="0"
+        ixz="12.459"
+        iyy="94.508"
+        iyz="0"
+        izz="143.22" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/base_Link_boom.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/base_Link_boom.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="base_Link_boom"
+    type="fixed">
+    <origin
+      xyz="0.455 0 0.620"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_Link_boom" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <!-- <joint
+    name="tool"
+    type="revolute">
+    <origin
+      xyz="-0.145 0 -0.978"
+      rpy="0 0 0" />
+    <parent
+      link="tool_s_Link" />
+    <child
+      link="tool_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+  <link
+    name="turntable_Link">
+    <inertial>
+      <origin
+        xyz="3.7436 0.0045415 0.46432"
+        rpy="0 0 0" />
+      <mass
+        value="602.5915" />
+      <inertia
+        ixx="196.8135"
+        ixy="3.1036"
+        ixz="-25.5351"
+        iyy="232.4515"
+        iyz="-0.1026"
+        izz="192.3247" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/turntable_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/turntable_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="turntable"
+    type="revolute">
+    <origin
+      xyz="0 0 0.118"
+      rpy="0 0 0" />
+    <parent
+      link="base_Link_boom" />
+    <child
+      link="turntable_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="boom_Link">
+    <inertial>
+      <origin
+        xyz="3.7431 0.026627 0.21887"
+        rpy="0 0 0" />
+      <mass
+        value="713.4753" />
+      <inertia
+        ixx="1272.3217"
+        ixy="0.4327"
+        ixz="2254.625"
+        iyy="6416.999"
+        iyz="0.2628"
+        izz="5263.7763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/boom_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/boom_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="boom"
+    type="revolute">
+    <origin
+      xyz="-0.179 0 0.258"
+      rpy="0 0 0" />
+    <parent
+      link="turntable_Link" />
+    <child
+      link="boom_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="s_boom_Link">
+    <inertial>
+      <origin
+        xyz="-0.7698 0.026627 -1.1446"
+        rpy="0 0 0" />
+      <mass
+        value="243.6889" />
+      <inertia
+        ixx="23.6401"
+        ixy="1.0038"
+        ixz="49.4302"
+        iyy="278.0877"
+        iyz="0.3388"
+        izz="259.8962" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/s_boom_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/s_boom_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="s_boom"
+    type="revolute">
+    <origin
+      xyz="4.7 0 1.2124"
+      rpy="0 0.17453 0" />
+    <parent
+      link="boom_Link" />
+    <child
+      link="s_boom_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="s_arm_Link">
+    <inertial>
+      <origin
+        xyz="-2.8546 0.026627 -1.4346"
+        rpy="0 0 0" />
+      <mass
+        value="262.1029" />
+      <inertia
+        ixx="3.4831"
+        ixy="0.9088"
+        ixz="-0.7374"
+        iyy="626.3383"
+        iyz="-0.0004"
+        izz="626.0282" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/s_arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/s_arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="s_arm"
+    type="prismatic">
+    <origin
+      xyz="2.0848 0 0.29"
+      rpy="0 0 0" />
+    <parent
+      link="s_boom_Link" />
+    <child
+      link="s_arm_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="d_joint1_Link">
+    <inertial>
+      <origin
+        xyz="-5.41 0.026127 -0.42159"
+        rpy="0 0 0" />
+      <mass
+        value="7.9283" />
+      <inertia
+        ixx="0.0654"
+        ixy="0"
+        ixz="-0.0004"
+        iyy="0.0683"
+        iyz="0"
+        izz="0.0098" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/d_joint1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/d_joint1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="d_joint1"
+    type="revolute">
+    <origin
+      xyz="2.4 0.0005 -0.08"
+      rpy="0 -0.17453 0" />
+    <parent
+      link="s_arm_Link" />
+    <child
+      link="d_joint1_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="d_joint2_Link">
+    <inertial>
+      <origin
+        xyz="-5.41 0.026127 -0.30159"
+        rpy="0 0 0" />
+      <mass
+        value="12.4463" />
+      <inertia
+        ixx="0.1667"
+        ixy="0"
+        ixz="0"
+        iyy="0.1682"
+        iyz="0"
+        izz="0.0278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/d_joint2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/d_joint2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="d_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.12"
+      rpy="0 0 0" />
+    <parent
+      link="d_joint1_Link" />
+    <child
+      link="d_joint2_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_s_Link">
+    <inertial>
+      <origin
+        xyz="-5.41 0.026127 -0.13559"
+        rpy="0 0 0" />
+      <mass
+        value="34.0794" />
+      <inertia
+        ixx="11.2534"
+        ixy="-0.0288"
+        ixz="1.9823"
+        iyy="8.1593"
+        iyz="-0.1001"
+        izz="4.3527" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/tool_s_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/tool_s_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_s"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.166"
+      rpy="0 0 0" />
+    <parent
+      link="d_joint2_Link" />
+    <child
+      link="tool_s_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_Link">
+    <inertial>
+      <origin
+        xyz="-5.265 0.026125 0.84241"
+        rpy="0 0 0" />
+      <mass
+        value="764.7241" />
+      <inertia
+        ixx="21.2398"
+        ixy="11.1267"
+        ixz="-16.9245"
+        iyy="355.0577"
+        iyz="-12.1279"
+        izz="358.2286" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/tool_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://forestry_description/meshes/tool_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool"
+    type="revolute">
+    <origin
+      xyz="-0.145 0 -0.978"
+      rpy="0 0 0" />
+    <parent
+      link="tool_s_Link" />
+    <child
+      link="tool_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

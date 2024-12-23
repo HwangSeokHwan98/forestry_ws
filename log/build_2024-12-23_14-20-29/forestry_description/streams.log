@@ -1,0 +1,93 @@
+[0.114s] Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_description
+[0.315s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.394s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.921s] -- Configuring done
+[0.948s] -- Generating done
+[0.950s] -- Build files have been written to: /home/hsh/forestry_ws/build/forestry_description
+[0.954s] Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_description
+[0.958s] Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_description -- -j20 -l20
+[1.021s] Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_description -- -j20 -l20
+[1.122s] Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_description
+[1.133s] -- Install configuration: ""
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/config
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/config/joint_names_Assy_Concept_whole.yaml
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/gazebo.launch
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/spawn_robot_launch.py
+[1.133s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/display.launch
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/__pycache__
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/__pycache__/spawn_robot_launch.cpython-38.pyc
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL2.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL2.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4_2.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB3.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB0.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL3.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB3.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB2.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4_1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4_1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/tool_Link.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL5.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB0.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/d_joint2_Link.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/boom_Link.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB2.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB1.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/s_boom_Link.STL
+[1.134s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/s_arm_Link.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB3.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR5.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4_2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR3.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/d_joint1_Link.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB0.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL3.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/turntable_Link.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/tool_s_Link.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4_2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4_1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/base_link.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4_1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB3.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR3.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL5.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/base_Link_boom.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4_2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB0.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR5.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR2.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL1.STL
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf/forestry_description.urdf
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf/forestry_descriptoin.csv
+[1.135s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/package_run_dependencies/forestry_description
+[1.135s] -- Installing: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/parent_prefix_path/forestry_description
+[1.163s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/ament_prefix_path.sh
+[1.163s] -- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/ament_prefix_path.dsv
+[1.163s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/path.sh
+[1.163s] -- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/path.dsv
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.bash
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.sh
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.zsh
+[1.164s] -- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.dsv
+[1.164s] -- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/package.dsv
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/packages/forestry_description
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/cmake/forestry_descriptionConfig.cmake
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/cmake/forestry_descriptionConfig-version.cmake
+[1.164s] -- Up-to-date: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/package.xml
+[1.165s] Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_description

@@ -1,0 +1,2 @@
+Invoking command in '/home/hsh/forestry_ws/build/ecvt_controller': /usr/bin/cmake /home/hsh/forestry_ws/src/ecvt_controller/ecvt_controller -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/ecvt_controller
+Invoked command in '/home/hsh/forestry_ws/build/ecvt_controller' returned '1': /usr/bin/cmake /home/hsh/forestry_ws/src/ecvt_controller/ecvt_controller -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/ecvt_controller

@@ -1,0 +1,109 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+
+-- Build files have been written to: /home/hsh/forestry_ws/build/forestry_description
+-- Install configuration: ""
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/config
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/config/joint_names_Assy_Concept_whole.yaml
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/gazebo.launch
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/spawn_robot_launch.py
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/display.launch
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/__pycache__
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/launch/__pycache__/spawn_robot_launch.cpython-38.pyc
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4_2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB0.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4_1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4_1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/tool_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL5.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB0.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL4.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/d_joint2_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/boom_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/s_boom_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/s_arm_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FRB3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR5.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL4_2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/d_joint1_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RLB0.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FL3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/turntable_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/tool_s_Link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4_2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR4_1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/base_link.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4_1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RRB3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR3.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL5.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/base_Link_boom.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR4_2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FLB0.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RR5.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/FR2.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/meshes/RL1.STL
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf/forestry_description.urdf
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/launch/urdf/forestry_descriptoin.csv
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/package_run_dependencies/forestry_description
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/parent_prefix_path/forestry_description
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/ament_prefix_path.sh
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/ament_prefix_path.dsv
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/path.sh
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/environment/path.dsv
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.bash
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.sh
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.zsh
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/local_setup.dsv
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/package.dsv
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/ament_index/resource_index/packages/forestry_description
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/cmake/forestry_descriptionConfig.cmake
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/cmake/forestry_descriptionConfig-version.cmake
+-- Installing: /home/hsh/forestry_ws/install/forestry_description/share/forestry_description/package.xml

@@ -1,0 +1,35 @@
+[0.052s] Invoking command in '/home/hsh/forestry_ws/build/ecvt_controller': /usr/bin/cmake /home/hsh/forestry_ws/src/ecvt_controller/ecvt_controller -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/ecvt_controller
+[1.669s] -- The C compiler identification is GNU 9.4.0
+[2.113s] -- The CXX compiler identification is GNU 9.4.0
+[2.137s] -- Check for working C compiler: /usr/bin/cc
+[2.259s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.261s] -- Detecting C compiler ABI info
+[2.364s] -- Detecting C compiler ABI info - done
+[2.375s] -- Detecting C compile features
+[2.394s] -- Detecting C compile features - done
+[2.399s] -- Check for working CXX compiler: /usr/bin/c++
+[2.487s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.488s] -- Detecting CXX compiler ABI info
+[2.545s] -- Detecting CXX compiler ABI info - done
+[2.554s] -- Detecting CXX compile features
+[2.555s] -- Detecting CXX compile features - done
+[2.734s] CMake Error at CMakeLists.txt:9 (find_package):
+[2.734s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.734s]   has asked CMake to find a package configuration file provided by
+[2.734s]   "ament_cmake", but CMake did not find one.
+[2.734s] 
+[2.734s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.734s]   any of the following names:
+[2.734s] 
+[2.734s]     ament_cmakeConfig.cmake
+[2.734s]     ament_cmake-config.cmake
+[2.734s] 
+[2.734s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.734s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.734s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.734s]   has been installed.
+[2.734s] 
+[2.734s] 
+[2.734s] -- Configuring incomplete, errors occurred!
+[2.734s] See also "/home/hsh/forestry_ws/build/ecvt_controller/CMakeFiles/CMakeOutput.log".
+[2.736s] Invoked command in '/home/hsh/forestry_ws/build/ecvt_controller' returned '1': /usr/bin/cmake /home/hsh/forestry_ws/src/ecvt_controller/ecvt_controller -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/ecvt_controller

@@ -1,0 +1,6 @@
+Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_description
+Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_description
+Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_description -- -j20 -l20
+Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_description -- -j20 -l20
+Invoking command in '/home/hsh/forestry_ws/build/forestry_description': /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_description
+Invoked command in '/home/hsh/forestry_ws/build/forestry_description' returned '0': /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_description

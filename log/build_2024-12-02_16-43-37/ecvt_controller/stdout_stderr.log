@@ -1,0 +1,63 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found rclcpp_action: 2.4.3 (/opt/ros/foxy/share/rclcpp_action/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hsh/forestry_ws/build/ecvt_controller
+[35m[1mScanning dependencies of target ecvt_effort_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ecvt_effort_controller.dir/cpp/ecvt_effort.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ecvt_effort_controller[0m
+[100%] Built target ecvt_effort_controller
+-- Install configuration: ""
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//launch
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//launch/e_ecvt_gazebo_v2.launch.py
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config/e_ecvt_controller_v2.yaml
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf/e_ecvt_v2.xacro.urdf
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/lib/ecvt_controller/ecvt_effort_controller
+-- Set runtime path of "/home/hsh/forestry_ws/install/ecvt_controller/lib/ecvt_controller/ecvt_effort_controller" to ""
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/package_run_dependencies/ecvt_controller
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/parent_prefix_path/ecvt_controller
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.sh
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.sh
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.dsv
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.bash
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.sh
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.zsh
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.dsv
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.dsv
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/packages/ecvt_controller
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig.cmake
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig-version.cmake
+-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.xml

@@ -1,0 +1,32 @@
+[0.013s] Invoking command in '/home/hsh/forestry_ws/build/ecvt_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/hsh/forestry_ws/build/ecvt_controller -- -j20 -l20
+[0.035s] [35m[1mScanning dependencies of target ecvt_effort_controller[0m
+[0.081s] [ 50%] [32mBuilding CXX object CMakeFiles/ecvt_effort_controller.dir/cpp/ecvt_effort.cpp.o[0m
+[1.870s] [100%] [32m[1mLinking CXX executable ecvt_effort_controller[0m
+[2.374s] [100%] Built target ecvt_effort_controller
+[2.380s] Invoked command in '/home/hsh/forestry_ws/build/ecvt_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/hsh/forestry_ws/build/ecvt_controller -- -j20 -l20
+[2.405s] Invoking command in '/home/hsh/forestry_ws/build/ecvt_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/hsh/forestry_ws/build/ecvt_controller
+[2.417s] -- Install configuration: ""
+[2.417s] -- Execute custom install script
+[2.418s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//launch/e_ecvt_gazebo_v2.launch.py
+[2.418s] -- Symlinking: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config/e_ecvt_controller_v2 copy.yaml
+[2.427s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config/e_ecvt_controller_v2.yaml
+[2.427s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf/e_ecvt_v2.xacro copy.urdf
+[2.427s] -- Symlinking: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf/e_ecvt_v2.xacro tree_joints.urdf
+[2.436s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf/e_ecvt_v2.xacro.urdf
+[2.436s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/lib/ecvt_controller/ecvt_effort_controller
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/package_run_dependencies/ecvt_controller
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/parent_prefix_path/ecvt_controller
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.sh
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.dsv
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.sh
+[2.437s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.dsv
+[2.438s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.bash
+[2.438s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.sh
+[2.438s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.zsh
+[2.438s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.dsv
+[2.438s] -- Symlinking: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.dsv
+[2.447s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/packages/ecvt_controller
+[2.447s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig.cmake
+[2.447s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig-version.cmake
+[2.447s] -- Up-to-date symlink: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.xml
+[2.449s] Invoked command in '/home/hsh/forestry_ws/build/ecvt_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/hsh/forestry_ws/build/ecvt_controller

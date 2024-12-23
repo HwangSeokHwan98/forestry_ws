@@ -1,0 +1,136 @@
+[0.000000] (-) TimerEvent: {}
+[0.000403] (-) JobUnselected: {'identifier': 'forestry_control'}
+[0.000450] (-) JobUnselected: {'identifier': 'forestry_description'}
+[0.000494] (ecvt_controller) JobQueued: {'identifier': 'ecvt_controller', 'dependencies': OrderedDict()}
+[0.000505] (ecvt_controller) JobStarted: {'identifier': 'ecvt_controller'}
+[0.004862] (ecvt_controller) JobProgress: {'identifier': 'ecvt_controller', 'progress': 'cmake'}
+[0.005093] (ecvt_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/hsh/forestry_ws/src/ecvt_controller/ecvt_controller', '-DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/ecvt_controller'], 'cwd': '/home/hsh/forestry_ws/build/ecvt_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hsh'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1628'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/openrobots/lib::/home/hsh/matlogger2_install/lib:/home/hsh/.mujoco/mujoco210/bin:/usr/lib/nvidia'), ('HOME', '/home/hsh'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/hsh/forestry_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1289'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6562'), ('CPLUS_INCLUDE_PATH', ':/home/hsh/matlogger2_install/include'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hsh'), ('JOURNAL_STREAM', '8:48909'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hsh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hsh/anaconda3/condabin:/opt/openrobots/bin:/home/hsh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hsh:@/tmp/.ICE-unix/1745,unix/hsh:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', '3673f046b75949d48eed19df7a740606'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/hsh/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:82bfe8b5-8fd6-48d3-9fa4-aadf18a6b9b0'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hsh/forestry_ws/build/ecvt_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hsh/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages:'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/openrobots::/opt/ros/foxy')]), 'shell': False}
+[0.090895] (ecvt_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.100033] (-) TimerEvent: {}
+[0.154335] (ecvt_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.154438] (ecvt_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.200167] (-) TimerEvent: {}
+[0.300564] (-) TimerEvent: {}
+[0.401017] (-) TimerEvent: {}
+[0.455927] (ecvt_controller) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.501123] (-) TimerEvent: {}
+[0.535276] (ecvt_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.546454] (ecvt_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.601334] (-) TimerEvent: {}
+[0.701935] (-) TimerEvent: {}
+[0.802519] (-) TimerEvent: {}
+[0.903057] (-) TimerEvent: {}
+[1.003605] (-) TimerEvent: {}
+[1.104160] (-) TimerEvent: {}
+[1.204711] (-) TimerEvent: {}
+[1.244787] (ecvt_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.273683] (ecvt_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.304792] (-) TimerEvent: {}
+[1.335019] (ecvt_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.370692] (ecvt_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.386528] (ecvt_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.404963] (-) TimerEvent: {}
+[1.422506] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.505125] (-) TimerEvent: {}
+[1.605667] (-) TimerEvent: {}
+[1.693296] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.693593] (ecvt_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.705837] (-) TimerEvent: {}
+[1.806266] (-) TimerEvent: {}
+[1.809723] (ecvt_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.809906] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.906436] (-) TimerEvent: {}
+[1.928790] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.929498] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.006641] (-) TimerEvent: {}
+[2.027181] (ecvt_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.028400] (ecvt_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.106912] (-) TimerEvent: {}
+[2.207527] (-) TimerEvent: {}
+[2.272923] (ecvt_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[2.292660] (ecvt_controller) StdoutLine: {'line': b'-- Found rclcpp_action: 2.4.3 (/opt/ros/foxy/share/rclcpp_action/cmake)\n'}
+[2.307673] (-) TimerEvent: {}
+[2.352903] (ecvt_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.407263] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.407685] (ecvt_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.407847] (-) TimerEvent: {}
+[2.408027] (ecvt_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.408328] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.409338] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.410039] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.411812] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.412023] (ecvt_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.412421] (ecvt_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.452306] (ecvt_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.463406] (ecvt_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.464603] (ecvt_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/hsh/forestry_ws/build/ecvt_controller\n'}
+[2.473145] (ecvt_controller) CommandEnded: {'returncode': 0}
+[2.474877] (ecvt_controller) JobProgress: {'identifier': 'ecvt_controller', 'progress': 'build'}
+[2.474937] (ecvt_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hsh/forestry_ws/build/ecvt_controller', '--', '-j20', '-l20'], 'cwd': '/home/hsh/forestry_ws/build/ecvt_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hsh'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1628'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/openrobots/lib::/home/hsh/matlogger2_install/lib:/home/hsh/.mujoco/mujoco210/bin:/usr/lib/nvidia'), ('HOME', '/home/hsh'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/hsh/forestry_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1289'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6562'), ('CPLUS_INCLUDE_PATH', ':/home/hsh/matlogger2_install/include'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hsh'), ('JOURNAL_STREAM', '8:48909'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hsh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hsh/anaconda3/condabin:/opt/openrobots/bin:/home/hsh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hsh:@/tmp/.ICE-unix/1745,unix/hsh:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', '3673f046b75949d48eed19df7a740606'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/hsh/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:82bfe8b5-8fd6-48d3-9fa4-aadf18a6b9b0'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hsh/forestry_ws/build/ecvt_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hsh/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages:'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/openrobots::/opt/ros/foxy')]), 'shell': False}
+[2.508034] (-) TimerEvent: {}
+[2.530847] (ecvt_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ecvt_effort_controller\x1b[0m\n'}
+[2.608240] (-) TimerEvent: {}
+[2.708793] (-) TimerEvent: {}
+[2.809326] (-) TimerEvent: {}
+[2.909854] (-) TimerEvent: {}
+[2.956619] (ecvt_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ecvt_effort_controller.dir/cpp/ecvt_effort.cpp.o\x1b[0m\n'}
+[3.010051] (-) TimerEvent: {}
+[3.110547] (-) TimerEvent: {}
+[3.211079] (-) TimerEvent: {}
+[3.311610] (-) TimerEvent: {}
+[3.412182] (-) TimerEvent: {}
+[3.512705] (-) TimerEvent: {}
+[3.613179] (-) TimerEvent: {}
+[3.713644] (-) TimerEvent: {}
+[3.813905] (-) TimerEvent: {}
+[3.914212] (-) TimerEvent: {}
+[4.014491] (-) TimerEvent: {}
+[4.114765] (-) TimerEvent: {}
+[4.215035] (-) TimerEvent: {}
+[4.315309] (-) TimerEvent: {}
+[4.415586] (-) TimerEvent: {}
+[4.515862] (-) TimerEvent: {}
+[4.616138] (-) TimerEvent: {}
+[4.716542] (-) TimerEvent: {}
+[4.817053] (-) TimerEvent: {}
+[4.917308] (-) TimerEvent: {}
+[5.017567] (-) TimerEvent: {}
+[5.117823] (-) TimerEvent: {}
+[5.197479] (ecvt_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ecvt_effort_controller\x1b[0m\n'}
+[5.218135] (-) TimerEvent: {}
+[5.318412] (-) TimerEvent: {}
+[5.418928] (-) TimerEvent: {}
+[5.519499] (-) TimerEvent: {}
+[5.586830] (ecvt_controller) StdoutLine: {'line': b'[100%] Built target ecvt_effort_controller\n'}
+[5.600626] (ecvt_controller) CommandEnded: {'returncode': 0}
+[5.620301] (ecvt_controller) JobProgress: {'identifier': 'ecvt_controller', 'progress': 'install'}
+[5.620749] (-) TimerEvent: {}
+[5.635335] (ecvt_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hsh/forestry_ws/build/ecvt_controller'], 'cwd': '/home/hsh/forestry_ws/build/ecvt_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hsh'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1628'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/openrobots/lib::/home/hsh/matlogger2_install/lib:/home/hsh/.mujoco/mujoco210/bin:/usr/lib/nvidia'), ('HOME', '/home/hsh'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/hsh/forestry_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1289'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6562'), ('CPLUS_INCLUDE_PATH', ':/home/hsh/matlogger2_install/include'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hsh'), ('JOURNAL_STREAM', '8:48909'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/openrobots/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hsh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hsh/anaconda3/condabin:/opt/openrobots/bin:/home/hsh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hsh:@/tmp/.ICE-unix/1745,unix/hsh:/tmp/.ICE-unix/1745'), ('INVOCATION_ID', '3673f046b75949d48eed19df7a740606'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/hsh/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:82bfe8b5-8fd6-48d3-9fa4-aadf18a6b9b0'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hsh/forestry_ws/build/ecvt_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hsh/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/openrobots/lib/python3.8/site-packages:'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/openrobots::/opt/ros/foxy')]), 'shell': False}
+[5.644211] (ecvt_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.644468] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//launch\n'}
+[5.644522] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//launch/e_ecvt_gazebo_v2.launch.py\n'}
+[5.644570] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config\n'}
+[5.644608] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//config/e_ecvt_controller_v2.yaml\n'}
+[5.644645] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf\n'}
+[5.644682] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller//urdf/e_ecvt_v2.xacro.urdf\n'}
+[5.644741] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/lib/ecvt_controller/ecvt_effort_controller\n'}
+[5.645105] (ecvt_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/hsh/forestry_ws/install/ecvt_controller/lib/ecvt_controller/ecvt_effort_controller" to ""\n'}
+[5.645238] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/package_run_dependencies/ecvt_controller\n'}
+[5.645330] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/parent_prefix_path/ecvt_controller\n'}
+[5.645370] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.sh\n'}
+[5.645420] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/ament_prefix_path.dsv\n'}
+[5.645460] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.sh\n'}
+[5.645506] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/environment/path.dsv\n'}
+[5.645550] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.bash\n'}
+[5.645592] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.sh\n'}
+[5.645635] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.zsh\n'}
+[5.645677] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/local_setup.dsv\n'}
+[5.645720] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.dsv\n'}
+[5.645765] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ament_index/resource_index/packages/ecvt_controller\n'}
+[5.645804] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig.cmake\n'}
+[5.645843] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/cmake/ecvt_controllerConfig-version.cmake\n'}
+[5.645882] (ecvt_controller) StdoutLine: {'line': b'-- Installing: /home/hsh/forestry_ws/install/ecvt_controller/share/ecvt_controller/package.xml\n'}
+[5.647581] (ecvt_controller) CommandEnded: {'returncode': 0}
+[5.721137] (-) TimerEvent: {}
+[5.748890] (ecvt_controller) JobEnded: {'identifier': 'ecvt_controller', 'rc': 0}
+[5.750440] (-) EventReactorShutdown: {}

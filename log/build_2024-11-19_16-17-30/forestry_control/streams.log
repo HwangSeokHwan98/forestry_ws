@@ -1,0 +1,82 @@
+[0.009s] Invoking command in '/home/hsh/forestry_ws/build/forestry_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_control
+[0.040s] -- The C compiler identification is GNU 9.4.0
+[0.069s] -- The CXX compiler identification is GNU 9.4.0
+[0.072s] -- Check for working C compiler: /usr/bin/cc
+[0.115s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.116s] -- Detecting C compiler ABI info
+[0.155s] -- Detecting C compiler ABI info - done
+[0.161s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.163s] -- Check for working CXX compiler: /usr/bin/c++
+[0.205s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.206s] -- Detecting CXX compiler ABI info
+[0.254s] -- Detecting CXX compiler ABI info - done
+[0.260s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.261s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.275s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.275s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.368s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.381s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.410s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.456s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.474s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.519s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.551s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.552s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.552s] -- Looking for pthread.h
+[0.598s] -- Looking for pthread.h - found
+[0.598s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.674s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.674s] -- Looking for pthread_create in pthreads
+[0.763s] -- Looking for pthread_create in pthreads - not found
+[0.764s] -- Looking for pthread_create in pthread
+[0.835s] -- Looking for pthread_create in pthread - found
+[0.835s] -- Found Threads: TRUE  
+[0.921s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.984s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.998s] -- Found kdl_parser: 2.4.1 (/opt/ros/foxy/share/kdl_parser/cmake)
+[0.999s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.001s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[1.004s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.047s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.047s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.048s] -- Configured cppcheck include dirs: /home/hsh/forestry_ws/src/forestry_control/include
+[1.048s] -- Configured cppcheck exclude dirs and/or files: 
+[1.048s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.048s] -- Configured cpplint exclude dirs and/or files: 
+[1.049s] -- Added test 'lint_cmake' to check CMake code style
+[1.049s] -- Added test 'uncrustify' to check C / C++ code style
+[1.049s] -- Configured uncrustify additional arguments: 
+[1.049s] -- Added test 'xmllint' to check XML markup files
+[1.051s] -- Configuring done
+[1.055s] -- Generating done
+[1.061s] -- Build files have been written to: /home/hsh/forestry_ws/build/forestry_control
+[1.066s] Invoked command in '/home/hsh/forestry_ws/build/forestry_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/hsh/forestry_ws/src/forestry_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hsh/forestry_ws/install/forestry_control
+[1.068s] Invoking command in '/home/hsh/forestry_ws/build/forestry_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_control -- -j20 -l20
+[1.093s] [35m[1mScanning dependencies of target forestry_dynamics[0m
+[1.121s] [ 50%] [32mBuilding CXX object CMakeFiles/forestry_dynamics.dir/src/joint_state_subscriber.cpp.o[0m
+[3.916s] [100%] [32m[1mLinking CXX executable forestry_dynamics[0m
+[4.039s] [100%] Built target forestry_dynamics
+[4.045s] Invoked command in '/home/hsh/forestry_ws/build/forestry_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hsh/forestry_ws/build/forestry_control -- -j20 -l20
+[4.058s] Invoking command in '/home/hsh/forestry_ws/build/forestry_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_control
+[4.063s] -- Install configuration: ""
+[4.063s] -- Execute custom install script
+[4.063s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/lib/forestry_control/forestry_dynamics
+[4.068s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/ament_index/resource_index/package_run_dependencies/forestry_control
+[4.073s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/ament_index/resource_index/parent_prefix_path/forestry_control
+[4.077s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/environment/ament_prefix_path.sh
+[4.082s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/environment/ament_prefix_path.dsv
+[4.086s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/environment/path.sh
+[4.090s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/environment/path.dsv
+[4.095s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/local_setup.bash
+[4.099s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/local_setup.sh
+[4.103s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/local_setup.zsh
+[4.108s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/local_setup.dsv
+[4.112s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/package.dsv
+[4.117s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/ament_index/resource_index/packages/forestry_control
+[4.121s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/cmake/forestry_controlConfig.cmake
+[4.126s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/cmake/forestry_controlConfig-version.cmake
+[4.131s] -- Symlinking: /home/hsh/forestry_ws/install/forestry_control/share/forestry_control/package.xml
+[4.138s] Invoked command in '/home/hsh/forestry_ws/build/forestry_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hsh/forestry_ws/build/forestry_control
